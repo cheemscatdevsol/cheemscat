@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEEMSCAT | The Legend Reborn on Solana</title>
+    <style>
+        :root { --pink: #ff85a2; --purple: #8a2be2; --white: #ffffff; }
+        body { margin: 0; font-family: 'Arial', sans-serif; background: #000; color: var(--white); text-align: center; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.png'); background-size: cover; padding: 100px 20px; }
+        .logo { width: 150px; border-radius: 50%; border: 5px solid var(--pink); margin-bottom: 20px; }
+        h1 { font-size: 3rem; color: var(--pink); text-shadow: 2px 2px var(--purple); }
+        .ca-box { background: #1a1a1a; border: 2px dashed var(--pink); padding: 15px; display: inline-block; margin: 20px 0; cursor: pointer; border-radius: 8px; }
+        .btn { background: var(--pink); color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 50px; display: inline-block; margin: 10px; transition: 0.3s; }
+        .btn:hover { transform: scale(1.1); background: var(--purple); }
+        .section { padding: 60px 20px; max-width: 800px; margin: auto; }
+        footer { padding: 40px; font-size: 0.8rem; opacity: 0.6; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <img src="logo.png" alt="Cheemscat Logo" class="logo">
+        <h1>CHEEMSCAT</h1>
+        <p>The OG feline is back to reclaim the throne. Built for speed. Powered by chaos.</p>
+        <div class="ca-box" onclick="copyCA()">
+            <strong>CA:</strong> <span id="ca">4aLsYVWhiy2j7QZTusUXUHosY2x2HXYNdiK3FC5Jpump</span>
+            <p style="font-size: 0.7rem; margin: 5px 0 0;">(Click to copy address)</p>
+        </div>
+        <br>
+        <a href="https://dexscreener.com/solana/4aLsYVWhiy2j7QZTusUXUHosY2x2HXYNdiK3FC5Jpump" class="btn">VIEW CHART</a>
+        <a href="https://x.com/Cheemscat_SOL" class="btn">FOLLOW X</a>
+    </section>
+
+    <section class="section">
+        <h2>UNFINISHED BUSINESS</h2>
+        <p>This isn’t a restart — It’s a legend reborn. Once a cult favorite, now rebuilt for Solana culture and pure meme momentum. No roadmap. No promises. Just OG energy and community vibes.</p>
+    </section>
+
+    <section class="section" style="background: #111;">
+        <h2>TOKENOMICS</h2>
+        <p>✅ Liquidity: Burnt/Locked<br>✅ Mint: Renounced<br>✅ Supply: Pure Chaos</p>
+        <p>Dev: <a href="https://x.com/CheemsCatDev" style="color:var(--pink);">@CheemsCatDev</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 CHEEMSCAT. DYOR. MEME COINS ARE HIGH RISK.</p>
+    </footer>
+
+    <script>
+        function copyCA() {
+            const ca = document.getElementById('ca').innerText;
+            navigator.clipboard.writeText(ca);
+            alert("Contract Address Copied!");
+        }
+    </script>
+</body>
+</html>
